@@ -1,0 +1,69 @@
+.controlsBar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: all;
+
+
+  width: 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 14.95px;
+  align-items: flex-end;
+
+  &__arrows {
+    display: flex;
+    gap: 5.95px;
+
+    button {
+      width: 44px;
+      height: 44px;
+      background-color: transparent;
+    }
+
+    button:nth-child(1) {
+      background-image: url('../../../assets/controls/arrowLeft.svg');
+    }
+
+    button:nth-child(2) {
+      background-image: url('../../../assets/controls/arrowRight.svg');
+    }
+  }
+
+  &__numbers {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+
+    span:nth-child(1) {
+      display: block;
+      font-size: 32px;
+      color: var(--mainColor);
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 5px;
+      font-size: 18px;
+      color: var(--mainColor);
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    span:nth-child(2) {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 18px;
+      opacity: 0.3;
+      color: var(--mainColor);
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
