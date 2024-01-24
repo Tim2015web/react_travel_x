@@ -3,22 +3,21 @@
   right: 0;
   bottom: 0;
   pointer-events: all;
-
-
-  width: 94px;
-  display: flex;
-  flex-direction: column;
-  gap: 14.95px;
-  align-items: flex-end;
+  display: grid;
+  gap: 15px;
 
   &__arrows {
     display: flex;
-    gap: 5.95px;
+    gap: 6px;
 
     button {
       width: 44px;
       height: 44px;
       background-color: transparent;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     button:nth-child(1) {
@@ -36,34 +35,16 @@
     align-items: flex-end;
     justify-content: flex-end;
 
+    color: rgb(255, 255, 255, 0.3) !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
 
     span:nth-child(1) {
-      display: block;
+      color: var(--mainColor);
       font-size: 32px;
-      color: var(--mainColor);
-      font-style: normal;
       font-weight: 600;
-      line-height: normal;
-    }
-
-    &:nth-child(2) {
-      margin-bottom: 5px;
-      font-size: 18px;
-      color: var(--mainColor);
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-    }
-
-    span:nth-child(2) {
-      display: block;
-      margin-bottom: 3px;
-      font-size: 18px;
-      opacity: 0.3;
-      color: var(--mainColor);
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
+      line-height: 1.2;
     }
   }
 }
