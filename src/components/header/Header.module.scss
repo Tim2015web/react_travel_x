@@ -4,12 +4,8 @@
   background-color: gainsboro;
   color: var(--mainColor);
 
-  background-image: url('../../assets/slideBg/01.webp');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
   &__wrapper {
+    // display: none; // Убрать
     position: absolute;
     z-index: 9;
     top: 50px;
@@ -17,9 +13,6 @@
     bottom: 80px;
     left: 70px;
     pointer-events: none;
-
-    // Убрать
-    background-color: rgba(100, 100, 100, 0.2);
 
     @media (max-width: 1200px) {
       top: 40px;
