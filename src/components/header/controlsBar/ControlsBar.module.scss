@@ -6,6 +6,10 @@
   display: grid;
   gap: 15px;
 
+  @media (max-width: 767px) {
+    display: none;
+  }
+
   &__arrows {
     display: flex;
     gap: 6px;
