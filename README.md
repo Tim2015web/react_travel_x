@@ -8,4 +8,4 @@ Figma, Vite, React JS, Scss, Swiper
 
 ---
 
-<img src="screenshot.jpg" title="Screenshot" alt="HTML"/>
+<img src="screenshot.webp" title="Screenshot" alt="HTML"/>
