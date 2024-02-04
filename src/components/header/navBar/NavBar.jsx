@@ -2,10 +2,9 @@ import styles from './NavBar.module.scss';
 
 import logoImg from '../../../assets/logotype.webp';
 
-export function NavBar() {
+export function NavBar({ openMobileNav }) {
   return (
     <div className={styles.navBar}>
-
       <div className={styles.navBar__logotype}>
         <a href="#!"><img src={logoImg} alt="Logotype" /><span>TRAVELx</span></a>
       </div>
@@ -20,9 +19,8 @@ export function NavBar() {
       </nav>
 
       <div className={styles.navBar__burgerBtn}>
-        <button id='modalOpen' />
+        <button onClick={openMobileNav} />
       </div>
-
     </div>
   );
 };
